@@ -3,16 +3,18 @@ import React, { Component } from "react";
 export default class Databinding extends Component {
   // Đây là phương thức trong đối tượng component
   // Biến và hàm thì khi khai báo có var let const
-  
-  showInfo(){
-    return "Hello mọi người"
+
+  showInfo() {
+    return "Hello mọi người";
   }
-  renderCard = ()=>{
-    return <div>
+  renderCard = () => {
+    return (
+      <div>
         <img src="https://picsum.photos/200/200" alt="photo" />
-    </div>
-  }
-  
+      </div>
+    );
+  };
+
   render() {
     const hoTen = "Trường An";
     const tinhDiemTrungBinh = (diemToan, diemVan) => {
